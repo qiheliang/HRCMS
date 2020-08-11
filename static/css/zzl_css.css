@@ -1,0 +1,523 @@
+/*----reset----*/
+html{ font-size: 100%; }
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,input,textarea,p,th,td{padding:0;margin:0;}
+
+body{color:#777e85;font-size:13px;font-family:"微软雅黑",Microsoft YaHei,Arial,Verdana;background: #f0f0f0; }
+
+form,input,textarea{font-family:"微软雅黑",Microsoft YaHei,Arial,Verdana;outline: none;}
+
+img{border:none;}
+
+a{color:#777e85;text-decoration:none;-webkit-transition: all .2s;transition:all .2s;}
+
+h1,h2,h3{ font-weight: normal;}
+
+li{list-style-type:none;}
+
+*, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; }
+/*----reset end----*/
+
+/*清除浮动*/
+.clearfix:after{content:'.';clear:both;display:block;height:0;visibility:hidden;font-size:0;line-height:0}
+
+/*清除浮动*/
+.clear{clear:both;display:block;height:0;visibility:hidden;font-size:0;line-height:0}
+
+/*左浮动*/
+.fl{float:left !important;}
+
+/*右浮动*/
+.fr{float:right !important;}
+
+/*单行溢出省略*/
+.ellipsis{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+
+/*多行溢出省略*/
+.ellipsis3{display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;overflow: hidden;}
+
+/*隐藏*/
+.hide{display: none;}
+
+/*显示块*/
+.show{display: block;}
+
+/*行内块*/
+.showInline{display: inline-block;}
+
+/*小的*/
+.small{font-size: 12px;}
+
+/*块居中*/
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*padding 10*/
+.zzl-paddingTen {
+  padding: 10px;
+}
+
+/*圆角3*/
+.zzl-roundedCornersThree {
+  border-radius: 3px;
+}
+/*容器*/
+.zzl-container{
+  background-color: #fff;
+  margin: 8px;
+  border-radius: 3px;
+  min-height: calc(100vh - 66px);
+}
+
+/*padding 10*/
+.weightWord {
+  font-weight: bold;
+}
+
+/*辅助类*/
+/*文字*/
+.zzl-text-primary{
+  color: #21bae9;
+}
+.zzl-text-success{
+  color: #07c29e;
+}
+.zzl-text-danger{
+  color: #e74c3c;
+}
+.zzl-text-warning{
+  color: #ff9500;
+}
+.zzl-text-info{
+  color: #1e364e;
+}
+.zzl-icon-color{
+  color: #868e96;
+}
+.zzl-icon-insideColor{
+  color: #bcc0c4;
+}
+/*背景*/
+.zzl-bg-primary{
+  color: #fff;
+  background-color: #21bae9;
+}
+.zzl-bg-success{
+  color: #fff;
+  background-color: #07c29e;
+}
+.zzl-bg-danger{
+  color: #fff;
+  background-color: #e74c3c;
+}
+.zzl-bg-warning{
+  color: #fff;
+  background-color: #ff9500;
+}
+.zzl-bg-info{
+  color: #fff;
+  background-color: #1e364e;
+}
+/*框架的css*/
+.zzl-main {
+  width: 100%;
+  height: 100%;
+}
+.zzl-main-top{
+  position: fixed;
+  top: 0;
+  left: 210px;
+  right: 0;
+  z-index: 99;
+  height: 50px;
+  transition: all 0.5s;
+  background-color: #fff;
+  border-bottom: 1px solid hsla(0,0%,100%,.15);
+}
+.zzl-main-left{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 98;
+  width: 210px;
+  transition: all 0.5s;
+  overflow: auto;
+  /* 修改 */
+  /* background-color: #1e364e; */
+  background-color: #001529;
+}
+.zzl-main-left::-webkit-scrollbar {
+   width: 0;
+   height: 0;
+   background-color: transparent;
+}
+.zzl-main-right{
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  left: 210px;
+  right: 0;
+  z-index: 99;
+  min-width: 377px;
+  transition: all 0.5s;
+  overflow: auto;
+  /* 修改 */
+  /* background-color: #f0f0f0; */
+  background-color: #f5f7f9;
+}
+.zzl-main-right::-webkit-scrollbar {
+   width: 12px;
+ }
+.zzl-main-right::-webkit-scrollbar-track {
+   background-color: #f1f1f1;
+ }
+.zzl-main-right::-webkit-scrollbar-track-piece {
+   background-color: #f1f1f1;
+   -webkit-border-radius: 10px;
+ }
+.zzl-main-right::-webkit-scrollbar-thumb {
+   background-color: #ccc;
+   /* border: solid 1px #f1f1f1; */
+   /* border-radius: 10px; */
+ }
+.zzl-main-right::-webkit-scrollbar-corner {
+   background-color: #f1f1f1;
+ }
+.zzl-main-right::-webkit-resizer {
+   background-repeat: no-repeat;
+   background-position: bottom right;
+ }
+.zzl-main-right::-webkit-scrollbar-thumb:hover {
+   background-color: #323c48;
+ }
+/*button样式修改*/
+.zzl-btn {
+  display: inline-block;
+  min-width: 76px;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #dcdfe6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  -webkit-transition: .1s;
+  transition: .1s;
+  font-weight: 500;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding: 9px 16px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+.zzl-btn:hover, .zzl-btn:focus {
+  color: #07c29e;
+  border-color: #b4ede2;
+  background-color: #e6f9f5;
+}
+.zzl-btn i {
+  font-size: 14px;
+}
+.zzl-btn span.icon-left {
+  margin-left: 5px;
+}
+.zzl-btn span.icon-right i {
+  margin-left: 5px;
+}
+.zzl-btn-icon {
+  min-width: inherit;
+}
+.zzl-big{
+  padding: 12px 16px;
+}
+.zzl-medium{
+  padding: 9px 16px;
+}
+.zzl-small{
+  padding: 7px 15px;
+}
+.zzl-info{
+  color: #fff;
+  background-color: #1e364e;
+  border-color: #1e364e;
+}
+.zzl-info:hover, .zzl-info:focus {
+  color: #fff;
+  background-color: #344a5f;
+  border-color: #1e364e;
+}
+.zzl-danger{
+  color: #fff;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.zzl-danger:hover, .zzl-danger:focus {
+  color: #fff;
+  background-color: #e95e4f;
+  border-color: #e74c3c;
+}
+.zzl-success{
+  color: #fff;
+  background-color: #07c29e;
+  border-color: #07c29e;
+}
+.zzl-success:hover, .zzl-success:focus {
+  color: #fff;
+  background-color: #35cdb1;
+  border-color: #07c29e;
+}
+.zzl-primary{
+  color: #fff;
+  background-color: #21bae9;
+  border-color: #21bae9;
+}
+.zzl-primary:hover, .zzl-primary:focus {
+  color: #fff;
+  background-color: #4bc7ed;
+  border-color: #21bae9;
+}
+.zzl-warning{
+  color: #fff;
+  background-color: #fdc22c;
+  border-color: #fdc22c;
+}
+.zzl-warning:hover, .zzl-warning:focus {
+  color: #fff;
+  background-color: #ffd64c;
+  border-color: #fdc22c;
+}
+.zzl-info-plain{
+  color: #fff;
+  background-color: #788795;
+  border-color: #1e364e;
+}
+.zzl-info-plain:hover, .zzl-info-plain:focus {
+  color: #fff;
+  background-color: #1e364e;
+  border-color: #1e364e;
+}
+.zzl-danger-plain{
+  color: #fff;
+  background-color: #f1948a;
+  border-color: #e74c3c;
+}
+.zzl-danger-plain:hover, .zzl-danger-plain:focus {
+  color: #fff;
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.zzl-success-plain{
+  color: #fff;
+  background-color: #6adac5;
+  border-color: #07c29e;
+}
+.zzl-success-plain:hover, .zzl-success-plain:focus {
+  color: #fff;
+  background-color: #07c29e;
+  border-color: #07c29e;
+}
+.zzl-primary-plain{
+  color: #fff;
+  background-color: #7ad6f2;
+  border-color: #21bae9;
+}
+.zzl-primary-plain:hover, .zzl-primary-plain:focus {
+  color: #fff;
+  background-color: #21bae9;
+  border-color: #21bae9;
+}
+.zzl-warning-plain{
+  color: #fff;
+  background-color: #ffbf66;
+  border-color: #ff9500;
+}
+.zzl-warning-plain:hover, .zzl-warning-plain:focus {
+  color: #fff;
+  background-color: #ff9500;
+  border-color: #ff9500;
+}
+.zzl-info-tag{
+  color: #fff;
+  background-color: #788795;
+  border-color: #1e364e;
+}
+.zzl-info-tag:hover, .zzl-info-tag:focus {
+  color: #fff;
+  background-color: #788795;
+  border-color: #1e364e;
+}
+.zzl-danger-tag{
+  color: #fff;
+  background-color: #f1948a;
+  border-color: #e74c3c;
+}
+.zzl-danger-tag:hover, .zzl-danger-tag:focus {
+  color: #fff;
+  background-color: #f1948a;
+  border-color: #e74c3c;
+}
+.zzl-success-tag{
+  color: #fff;
+  background-color: #6adac5;
+  border-color: #07c29e;
+}
+.zzl-success-tag:hover, .zzl-success-tag:focus {
+  color: #fff;
+  background-color: #6adac5;
+  border-color: #07c29e;
+}
+.zzl-primary-tag{
+  color: #fff;
+  background-color: #7ad6f2;
+  border-color: #21bae9;
+}
+.zzl-primary-tag:hover, .zzl-primary-tag:focus {
+  color: #fff;
+  background-color: #7ad6f2;
+  border-color: #21bae9;
+}
+.zzl-warning-tag{
+  color: #fff;
+  background-color: #ffbf66;
+  border-color: #ff9500;
+}
+.zzl-warning-tag:hover, .zzl-warning-tag:focus {
+  color: #fff;
+  background-color: #ffbf66;
+  border-color: #ff9500;
+}
+.zzl-title{
+  font-size: 14px;
+  color: #45494d;
+  line-height: 16px;
+}
+.zzl-dialog-nav{
+  font-size: 14px;
+  color: #45494d;
+  line-height: 14px;
+}
+.zzl-breadCrumbs{
+  font-size: 13px;
+  color: #bcc0c4;
+  opacity: .6;
+  line-height: 13px;
+}
+.zzl-formLabel{
+  font-size: 13px;
+  color: #45494d;
+  font-weight: bold;
+  line-height: 13px;
+}
+input::-webkit-input-placeholder {
+    color: #bcc0c4 !important;
+    font-size: 13px !important;
+}
+input{
+  color: #777e85 !important;
+}
+/*element 修改的样式*/
+/*table选项卡下面的伪类*/
+.el-tabs__nav-wrap::after{
+  height: 1px;
+  left: -17px;
+  right: -17px;
+  width: inherit;
+  background-color: #e6e6e6;
+}
+.el-tabs__nav-wrap{
+  overflow: inherit;
+}
+.el-tabs__item{
+  height: inherit;
+  line-height: inherit;
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+/*table选项卡下面的伪类选中*/
+.el-tabs__item.is-active .zzl-title {
+  color: #07c29e;
+}
+.el-tabs__item .zzl-title:hover {
+  color: #07c29e;
+  cursor: pointer;
+}
+/*teble内部的颜色*/
+.el-table{
+  color: #777e85;
+}
+/*input的颜色*/
+.el-input__inner{
+  color: #777e85;
+}
+/*表头颜色、字体大小*/
+.el-table thead{
+  color: #555a5e;
+  font-size: 14px;
+}
+/*表头高度*/
+.el-table th{
+  padding: 8px 0;
+}
+/*表格边框颜色*/
+.el-table--border th{
+  padding: 0 !important;
+  height: 32px !important;
+}
+.el-table--border th, .el-table--border td{
+  border-color: #e6e6e6;
+}
+.el-table--group, .el-table--border{
+  border-color: #e6e6e6;
+}
+.el-table--group::after, .el-table--border::after, .el-table::before{
+  background-color: #e6e6e6;
+}
+/*表格的高度*/
+.el-table--enable-row-transition .el-table__body td{
+  padding: 0 !important;
+  height: 26px !important;
+  font-size: 12px !important;
+}
+/*隔行变色的颜色*/
+.el-table--striped .el-table__body tr td {
+  background: #fbfbfb;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background: #fff;
+}
+/*表格悬浮颜色*/
+tr.el-table__row:hover > td {
+   background-color: #e6f9f5 !important;
+   cursor:pointer;
+ }
+/*分页*/
+.block{
+  text-align: right;
+  margin-top: 10px;
+}
+.block .el-input__inner{
+  height: 28px !important;
+  line-height: 28px !important;
+}
+.el-input__inner{
+  height: 34px !important;
+  line-height: 34px !important;
+}
+.el-input__icon, .el-cascader{
+  line-height: 34px !important;
+}
+.el-cascader {
+  line-height: 34px !important;
+}
+.el-date-editor .el-input__icon, .el-date-editor .el-range-separator{
+  line-height: 25px !important;
+}

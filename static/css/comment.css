@@ -1,0 +1,172 @@
+html, body {
+  height: 100%;
+}
+.el-form-item{
+  margin-bottom: 17px !important;
+}
+.el-form--label-top .el-form-item__label {
+  padding-bottom: 0 !important;
+}
+.indexTable{
+  margin: 13px 11px 0 !important;
+}
+.el-dialog__body{
+  padding: 20px !important;
+}
+.el-input__inner:focus{
+  background-color: #F2FCFB !important;
+  border-color: #07c29e !important;
+  color: #777e85 !important;
+}
+.search {
+  padding-right: 12px;
+  margin-bottom: 12px;
+}
+.search i{
+  float: left;
+}
+.search p {
+  margin-bottom: 8px;
+}
+/*表格的高度*/
+.el-table--enable-row-transition .el-table__body td div{
+  padding: 0 !important;
+}
+.el-progress-bar__innerText{
+  color: #000;
+  /* font-size: 14px !important; */
+}
+/* 对话框样式 */
+.updatePassWordModal{
+  border-radius: 3px;
+}
+.updatePassWordModal .el-dialog__body{
+  padding: 0 !important;
+}
+.updatePassWordModal .el-dialog__header{
+  padding: 0 !important;
+}
+.commentDialog{
+  border-radius: 3px;
+}
+.commentDialog .el-dialog__body{
+  padding: 0 !important;
+}
+.commentDialog .el-dialog__header{
+  padding: 0 !important;
+}
+/* 菜单栏样式 */
+.el-menu--collapse{
+  width: 48px !important;
+}
+.navigation-menu .is-active{
+  background-color: #07c29e !important;
+  color: #fff !important;
+}
+.el-menu--collapse .el-tooltip{
+  padding: 0 !important;
+  text-align: center !important;
+}
+.el-menu{
+  border: none;
+}
+.navigation-menu .el-menu .el-menu-item-group__title{
+  padding: 0;
+}
+.navigation-menu .el-menu .is-active{
+  padding-right: 10px !important;
+}
+.navigation-menu .el-menu-item{
+  height: 40px;
+  line-height: 40px;
+}
+.navigation-menu .el-submenu__title{
+  height: 40px;
+  line-height: 40px;
+}
+.el-menu--collapse .el-submenu__title {
+  padding: 0px !important;
+  padding-left: 14px !important;
+  text-align: center !important;
+}
+.navigation-menu .el-submenu .el-menu-item{
+  min-width: 160px;
+  padding-left: 30px !important;
+  margin-right: 20px !important;
+  margin-left: 20px !important;
+}
+.popper-menu .el-menu-item-group__title{
+  padding: 0px;
+}
+.popper-menu .el-menu-item{
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.popper-menu .is-active{
+  background-color: #07c29e !important;
+  color: #fff !important;
+}
+.popper-menu .el-menu-item{
+  height: 40px;
+  line-height: 40px;
+  width: 140px;
+  padding-left: 26px !important;
+  margin-left: 24px !important;
+  margin-right: 20px !important;
+  border-radius: 3px;
+  margin: 10px 0px;
+}
+.popper-menu .el-menu--popup-right-start{
+  background-color: rgba(30, 54, 78, 0.8) !important;
+}
+.popper-menu .el-menu--popup{
+ min-width: 180px;
+}
+/* 弹出框样式 */
+.popover-set{
+  background: rgba(85, 90, 94, 0.8) !important;
+  padding: 26px;
+}
+.popover-set .popper__arrow::after{
+  border-right-color: rgba(85, 90, 94, 0.8) !important;
+}
+.photo-set .outer img{
+  max-width: 174px;
+}
+/* 通知 */
+.el-notification .tip-text{
+  width: 240px;
+  margin-top: 10px;
+  overflow: auto;
+  max-height: 200px;
+}
+.el-notification .tip-text .number{
+  font-size: 12px;
+}
+.import-success span{
+  color: #07c29e;
+}
+.import-fail span{
+  color: #f17c67;
+}
+
+.table-class .el-table--scrollable-x .el-table__body-wrapper {
+  z-index: 1001;
+}
+/* 表单disabled样式 */
+.handling-situation .el-radio__input.is-disabled.is-checked .el-radio__inner::after{
+  background-color: #fff;
+}
+.handling-situation .el-radio__input.is-disabled.is-checked .el-radio__inner{
+  border-color: #07c29e;
+  background: #07c29e;
+}
+.fill-info .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner{
+  border-color: #07c29e;
+  background: #07c29e;
+}
+.fill-info .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after{
+  border-color: #fff;
+}
+.fill-info .el-textarea.is-disabled .el-textarea__inner{
+  background-color: #fbfbfb;
+}

@@ -1,0 +1,19 @@
+.invitation-wrapper {
+	margin: 0 20px;
+	/deep/ .el-input {
+		width: 280px;
+		margin: 10px 0;
+	}
+	/deep/ .el-button {
+		padding: 8px 20px;
+		margin-left: 10px;
+	}
+	.table {
+		/deep/ .el-table {
+			padding: 24px;
+			th, td {
+				text-align: center;
+			}
+		}
+	}
+}
